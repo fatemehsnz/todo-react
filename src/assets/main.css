@@ -1,0 +1,112 @@
+/* @import './base.css'; */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding-top: 20px;
+  background: #e6ecf1;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+    height: 35px;
+    width: 280px;
+    margin-right: 10px;
+    padding: 3px;
+    border: 2px solid #111;
+    border-radius: 7px;
+}
+.btn {
+    height: 35px;
+    width: 80px;
+    background-color: darkred;
+    border: 2px solid #111;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+.list {
+    /* display: block; */
+    padding: 0;
+}
+.todo {
+    display: block;
+}
+.btns {
+    /* display: inline-block; */
+}
+.delete-btn {
+    height: 30px;
+    width: 60px;
+    background-color: #e35361;
+    border: 2px solid #e35361;
+    border-radius: 7px;
+    color: #e6ecf1;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+.edit-btn {
+    height: 30px;
+    width: 60px;
+    background-color: #54a2a0;
+    border: 2px solid #54a2a0;
+    border-radius: 7px;
+    color: #e6ecf1;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+.update {
+    height: 35px;
+    width: 280px;
+    margin-right: 10px;
+    padding: 3px;
+    border: 2px solid #111;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.solid{
+    border-top: 2px solid #111;
+    margin-top: 10px;
+}
+
+.title {
+  display: inline-block;
+  margin-left: 5px;
+}
+.line-through {
+  display: inline-block;
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+.check {
+  background-color: darkred;
+}
+.answer {
+  border: 1px solid #8e959f;
+  padding: 20px;
+  font-size: 18px;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.2s linear all;
+}
+.answer span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.75em;
+  font-style: italic;
+}
+.answer:not(.is-answered) {
+  cursor: pointer;
+}
+.answer:not(.is-answered):hover {
+  background-color: #8ce200;
+  border-color: #8ce200;
+  color: #fff;
+}
